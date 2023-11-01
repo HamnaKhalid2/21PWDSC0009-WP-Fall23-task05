@@ -1,0 +1,218 @@
+// Colors
+$primary-color: #ff6600;
+$background-color: #333;
+$text-color: #333;
+// Fonts
+$main-font: 'Arial', sans-serif;
+
+// Spacing
+$spacing-unit: 10px;
+@mixin box-shadow($value) {
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    box-shadow: $value;
+}
+// Header
+#header {
+    
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+
+    img {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+// Navigation Menu
+#nav {
+    background-color: #272727;
+    padding: 10px 0;
+    text-align: center;
+    ul {
+        list-style-type: none;
+        padding: 0;
+        li {
+            display: inline-block;
+            margin-right: 20px;
+            a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// Home Section
+#home {
+    padding: 20px;
+    .home-content {
+        .home-text {
+            h2 {
+                font-size: 24px;
+                color:$text-color; // Customize the color
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 16px;
+                color: #666; // Customize the color
+            }
+        }
+
+        .home-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                max-width: 33%;
+                height: auto;
+                margin: 10px;
+                border: 1px solid #ddd; // Customize the border style
+                border-radius: 5px; // Customize the border radius
+            }
+        }
+    }
+}
+
+
+// Menu Section
+.menu {
+    background-color: #f9f9f9;
+    padding: 20px;
+    h2 { 
+        font-size: 24px;
+        color:$text-color; // Customize the color
+        margin-bottom: 10px;
+    }
+
+    .menu-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .item {
+            flex: 1;
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            h3 {
+                font-size: 20px;
+                margin: 10px 0;
+                color: #333;
+            }
+
+            p {
+                font-size: 16px;
+                color: #666;
+            }
+            .price {
+                font-size: 18px;
+                margin: 10px 0;
+                font-weight: bold;
+                color: #008CBA;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+// About Us Section
+#about {
+    background-color: #f9f9f9;
+    padding: 20px;
+    h2 { 
+        font-size: 24px;
+        color:$text-color; // Customize the color
+        margin-bottom: 10px;
+    }
+}
+
+// Our Team Section
+#team {
+    background-color: #f9f9f9;
+    padding: 20px;
+    h2 { 
+        font-size: 24px;
+        color:$text-color; // Customize the color
+        margin-bottom: 10px;
+    }
+    .team-images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        img {
+            flex: 1;
+            max-width: 30%;
+            height: auto;
+            margin: 10px;
+        }
+    }
+}
+
+// Contact Us Section
+#contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    h2 { 
+        font-size: 24px;
+        color:$text-color; // Customize the color
+        margin-bottom: 10px;
+    }
+    .contact-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        form {
+            max-width: 400px;
+            width: 100%;
+            label {
+                font-size: 16px;
+                font-weight: bold;
+                display: block;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                font-size: 16px;
+                padding: 10px;
+                width: 100%;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            button {
+                font-size: 16px;
+                background-color: #008CBA;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+            }
+        }
+    }
+}
+
+// Footer
+#footer {
+    background-color: $background-color;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    p {
+        font-size: 14px;
+    }
+}
